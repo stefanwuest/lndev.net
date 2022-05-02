@@ -9,7 +9,7 @@
 }
 
 html {
-	font-size: 15px;
+	font-size: 16px;
 }
 
 #theme-toggle {
@@ -30,11 +30,13 @@ html {
 	padding: 0px;
 	appearance: none;
 	transform: scale(0.8);
+  align-self: center;
+  justify-self: right;
 }
 
 html,
 html[data-theme="light"] {
-	--text-font: Play;
+	--text-font: Source Sans Pro;
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: rgb(222, 222, 222);
 	--light-text-color: rgb(89, 183, 255);
@@ -98,7 +100,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-	--text-font: Play;
+	--text-font: Source Sans Pro;
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: #EEE;
 	--light-text-color: #c4bbf0;
@@ -156,10 +158,14 @@ html[data-theme="dark"] {
 			transition: all 0.35s ease 0s;
 		}
 	}
+
+  .site-logo svg path {
+    fill: var(--very-light-text-color);
+  }
 }
 
 body {
-	font-family: var(--text-font), monospace;
+	font-family: var(--text-font), sans-serif;
 	text-rendering: optimizeLegibility;
 	line-height: 1.75;
 	color: var(--main-text-color);
@@ -171,7 +177,7 @@ a {
 }
 
 .post p {
-	margin: 1rem 0;
+	margin: 0 0 1rem 0;
 }
 
 .meta {
@@ -182,7 +188,7 @@ a {
 code,
 pre {
 	background: var(--code-bg-color);
-	margin: 0 -27px;
+	margin: 0 -1rem 1rem;
 	border-width: 1px;
 }
 
@@ -253,10 +259,21 @@ blockquote {
 
 h1 {
 	color: var(--main-text-color);
-	text-transform: uppercase;
+  text-indent: -999rem;
+  line-height: 1;
+  width: 14rem;
+  margin-left: 0;
+	// text-transform: uppercase;
 	font-size: 2rem;
 	font-weight: bold;
-	margin-bottom: 1.5rem;
+	// margin-bottom: 1.5rem;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 h2,
@@ -264,7 +281,7 @@ h3,
 h4,
 h5 {
 	font-weight: bold;
-	margin-bottom: 1.5rem;
+	margin: 1.5rem 0 0.5rem;
 	font-size: 2rem;
 }
 
@@ -290,6 +307,7 @@ h6 {
 
 section h1:first-child {
 	margin-top: 0;
+  margin-bottom: 0;
 }
 
 strong,
@@ -316,7 +334,7 @@ b {
 
 .post ul {
 	margin: 0px;
-	margin: 0px 0px 10px 10px;
+	margin: 0px 0px 1rem 2rem;
 }
 
 .post ol {
@@ -381,6 +399,11 @@ main {
 	justify-content: space-between;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .social-footer {
   padding: 1rem;
   display: flex;
@@ -438,7 +461,8 @@ figcaption {
 }
 
 .bio {
-	margin-bottom: 5rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
 }
 
 ::selection {

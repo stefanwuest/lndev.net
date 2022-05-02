@@ -1,8 +1,8 @@
-site: Gesko
-title: Gesko
-greetings: Hi 👋
+site: lndev.net
+title: lndev.net
+greetings: lndev.net
 description: >-
-  just a minimalist, personal blog
+  Get started with application development on the Lightning Network.
 lang: en-US
 timezone:  Europe/Rome
 repo: https://github.com/p0wex/Gesko # site repo [optional]
@@ -14,16 +14,16 @@ author:
   bio: just a minimalist, personal blog
   userpicture: 
   username: # general username
-  github: # github username
-  twitter: # twitter username
+  github: stefanwuest # github username
+  twitter: wueststefan # twitter username
   email: your-email@email.com # email adress
 
 # Font Settings
-googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+googlewebfonts: family=Source+Sans+Pro:wght@400;600&display=swap&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
 
 # URL settings
-url: "https://p0wex.github.io" # Domain Name of host. [username].github.io for github pages
-baseurl: "/Gesko" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+# url: "https://p0wex.github.io" # Domain Name of host. [username].github.io for github pages
+baseurl: "" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
 permalink: pretty
 
 # local
