@@ -328,6 +328,10 @@ b {
 	margin-bottom: 0.5rem;
 }
 
+.posts {
+  margin-top: 0;
+}
+
 .posts > h3 {
 	font-weight: 500;
 }
@@ -411,6 +415,10 @@ main {
   position: initial;
 
   .social-footer-icons {
+
+    a {
+      margin: 0 0.25rem;
+    }
      
     .fa {
       font-size: 1.3rem;

@@ -5,18 +5,18 @@ description: >-
   Get started with application development on the Lightning Network.
 lang: en-US
 timezone:  Europe/Rome
-repo: https://github.com/p0wex/Gesko # site repo [optional]
-data-theme: dark # default theme "dark" | "light"
-discus-identifier: powex # replace with your disqus shortname
+repo: https://github.com/stefanwuest/lndev.net # site repo [optional]
+data-theme: light # default theme "dark" | "light"
+# discus-identifier: powex # replace with your disqus shortname
 
 author:
-  name: gesko
-  bio: just a minimalist, personal blog
+  name: stefanwuest
+  bio:
   userpicture: 
   username: # general username
   github: stefanwuest # github username
   twitter: wueststefan # twitter username
-  email: your-email@email.com # email adress
+  # email: your-email@email.com # email adress
 
 # Font Settings
 googlewebfonts: family=Source+Sans+Pro:wght@400;600&display=swap&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
